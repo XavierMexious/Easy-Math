@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="Tampilan.css">
+    <link rel="stylesheet" type="text/css" href="BangunDatar.css">
+    <link rel="stylesheet" class="alternate-style" type="text/css" href="css/skins/pink.css">
+
+  </head>
+  <header class="header">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="logo">
+                <a href="index.html">Project Desain Dan Analisa Algoritma</a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html" class="active">Beranda</a></li>
+                    <li><a href="team.html" class="active">Tim</a></li>
+                    <li><a href="Calculator.html" class="active">Kalkulator</a></li>
+                    <li><a href="BangunDatar.html" class="active">Bangun Datar</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+ </header>
+  <body>
+    <section class="story-section" id="Bangun Datar">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>Kalkulator Bangun Datar</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="story-content">
+                <div class="row">
+                    <div class="story-item">
+                       <i class="fas fa-calculator"></i>
+                       <div class="story-text">
+                           <div class="luaskeliling">
+                                 <img src="persegi panjang.png" class ="img-fluid px-5" />
+                                <p class="text-center">Menghitung Luas dan Keliling Persegi Panjang </p></br> 
+                                <p class="text-center">Panjang : <input type="text" id="txt-pp-panjang" name="txt-pp-panjang"></p>
+                                <p class="text-center">Lebar : <input type="text" id="txt-pp-lebar" name="txt-pp-lebar"></p>
+                                <p class="text-center"><input type="button" onclick="hitungPersegiPanjang()" id="btnHitung" value="Hitung Luas dan keliling"></p>
+                                <p class="text-center">Luas : <input type="text" id="txt-pp-luas" name="txt-pp-luas" disabled></p>
+                                <p class="text-center">Keliling : <input type="text" id="txt-pp-keliling" name="txt-pp-keliling" disabled></p>
+                           </div>
+                       </div>
+                       <div class="story-img">
+                        <div class="dimension">
+                            <div class="luaskeliling">
+                                <img src="persegi.png" class ="img-fluid px-5"/>
+                                 <p class="text-center">Menghitung Luas dan Keliling Persegi</p></br>
+                                 <p class="text-center">Sisi : <input type="text" id="txt-p-sisi" name="txt-p-sisi"></p>
+                                 <p class="text-center"><input type="button" onclick="hitungPersegi()" id="btnHitung" value="Hitung Luas dan Keliling"></p>
+                                 <p class="text-center">Luas : <input type="text" id="txt-p-luas" name="txt-p-luas" disabled></p>
+                                 <p class="text-center">Keliling : <input type="text" id="txt-p-keliling" name="txt-p-keliling" disabled></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-item">
+                    <i class=""></i>
+                    <div class="story-text">
+                        <div class="luaskeliling">
+                          <img src="Segitiga.png" class ="img-fluid px-5" />
+                              <p class="text-center">Menghitung Luas dan Keliling Segitiga</p><br/>
+                              <p class="text-center">Alas  : <input type="text" id="txt-s-alas" name="txt-s-alas"></p>
+                              <p class="text-center">Tinggi    : <input type="text" id="txt-s-tinggi" name="txt-s-"></p>
+                              <p class="text-center"><button type="button" onclick="hitungSegitiga()" id="btnHitung" value="Hitung Luas">Hasil Luas dan Keliling
+                              </button></p>
+                              <p class="text-center">Luas : <input type="text" id="txt-s-luas" name="txt-s-luas" disabled></p>
+                              <p class="text-center">Keliling : <input type="text" id="txt-s-keliling" name="txt-s-keliling" disabled></p>
+                        </div>
+                    </div>
+                    <div class="story-img">
+                        <div class="dimension">
+                            <div class="luaskeliling">
+                              <img src="Lingkaran.png" class ="img-fluid px-5"/>
+                                 <p class="text-center">Menghitung Luas dan Keliling Lingkaran</p> <br/>
+                                 <p class="text-center">Jari-jari : <input type="text" id="txt-l-r" name="txt-l-r"></p>
+                                 <p class="text-center"><input type="button" onclick="hitungLingkaran()" id="btnHitung" value="Hitung Luas dan Keliling"></p>
+                                 <p class="text-center">Luas : <input type="text" id="txt-l-luas" name="txt-l-luas" disabled></p>
+                                 <p class="text-center">Keliling : <input type="text" id="txt-l-keliling" name="txt-l-keliling"disabled></p>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                 <!-- story item start -->
+                 <div class="story-item">
+                    <i class="fas fa-calculator"></i>
+                    <div class="story-text">
+                        <div class="luaskeliling">
+                          <img src="Trapesium.png" class ="img-fluid px-5" />
+                             <p class="text-center">Menghitung Luas dan Keliling Trapesium</p></br>
+                             <p class="text-center">Sisi panjang : <input type="text" id="txt-t-sisi1" name="txt-t-sisi1"></p>
+                             <p class="text-center">Sisi pendek : <input type="text" id="txt-t-sisi2" name="txt-t-sisi2"></p>
+                             <p class="text-center">Tinggi : <input type="text" id="txt-t-tinggi" name="txt-t-tinggi"></p>
+                             <input type="button" onclick="hitungTrapesium()" id="btnHitung" value="Hitung Luas dan Keliling"></p>
+                             <p class="text-center">Luas : <input type="text" id="txt-t-luas" name="txt-t-luas" disabled></p>
+                             <p class="text-center">Keliling : <input type="text" id="txt-t-keliling" name="txt-t-keliling" disabled></p>
+                        </div>
+                    </div>
+                    <div class="story-img">
+                        <div class="dimension">
+                            <div class="luaskeliling">
+                              <img src="Jajar Genjang.png" class ="img-fluid px-5"/>
+                                 <p class="text-center">Menghitung Luas dan Keliling Jajar Genjang </p><br/>
+                                 <p class="text-center">Alas : <input type="text" id="txt-jg-alas" name="txt-jg-alas"></p>
+                                 <p class="text-center">Tinggi : <input type="text" id="txt-jg-tinggi" name="txt-jg-tinggi"></p>
+                                 <p class="text-center">Sisi Miring : <input type="text" id="txt-jg-smiring" name="txt-jg-smiring"></p>
+                                 <input type="button" onclick="hitungJajarGenjang()" id="btnHitung" value="Hitung Luas dan Keliling"></p>
+                                 <p class="text-center">Luas : <input type="text" id="txt-jg-luas" name="txt-jg-luas" disabled></p>
+                                 <p class="text-center">Keliling : <input type="text" id="txt-jg-keliling" name="txt-jg-keliling" disabled></p>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                   <div class="story-item">
+                    <i class=""></i>
+                    <div class="story-text">
+                        <div class="luaskeliling">
+                          <img src="Belah ketupat.png" class ="img-fluid px-5"/>
+                             <p class="text-center ">Menghitung Luas dan Keliling Belah Ketupat</p> <br/>
+                             <p class="text-center">Diagonal1 : <input type="text" id="txt-bk-diagonal1"name="txt-bk-diagonal1"></p>
+                             <p class="text-center">Diagonal2 : <input type="text" id="txt-bk-diagonal2" name="txt-bk-diagonal2"></p>
+                             <input type="button" onclick="hitungBelahKetupat()" id="btnHitung" value="Hitung Luas dan Keliling">
+                             <p class="text-center">Luas : <input type="text" id="txt-bk-luas" name="txt-bk-luas" disabled></p>
+                             <p class="text-center">Keliling : <input type="text" id="txt-bk-keliling" name="txt-bk-keliling" disabled></p>
+                        </div>
+                    </div>
+                    <div class="story-img">
+                        <div class="dimension">
+                            <div class="luaskeliling">
+                              <img src="Layang layang.png" class ="img-fluid px-5"/>
+                                 <p class="text-center">Menghitung Luas dan Keliling Layang-Layang </p><br/>
+                                 <p class="text-center">Diagonal1 : <input type="text" id="txt-ll-diagonal1" name="txt-ll-diagonal1"></p>
+                                 <p class="text-center">Diagonal2 : <input type="text" id="txt-ll-diagonal2" name="txt-ll-diagonal2"></p>
+                                 <p class="text-center"><input type="button" onclick="hitungLayangLayang()" id="btnHitung" value="Hitung Luas dan Keliling"></p>
+                                 <p class="text-center">a: <input type="text" id="txt-ll-ab" name="txt-ll-ab"></p>
+                                 <p class="text-center">c: <input type="text" id="txt-ll-cd" name="txt-ll-cd"></p>
+                                 <p class="text-center">Luas : <input type="text" id="txt-ll-luas" name="txt-ll-luas" disabled></p>
+                                 <p class="text-center">Keliling : <input type="text" id="txt-ll-keliling" name="txt-ll-keliling" disabled></p>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="BangunDatar.js"></script>
+  </body>
+</html>

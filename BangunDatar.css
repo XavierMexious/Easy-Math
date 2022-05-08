@@ -1,0 +1,191 @@
+
+.story-section{
+    padding: 80px 0 80px;
+}
+.story-section .story-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+}
+.story-section .story-content:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    background-color: #cccccc;
+}
+.story-section .story-item i{
+    position: absolute;
+    left: 100%;
+    margin-left: -15px;
+    top: 5px;
+    width: 31px;
+    text-align: center;
+    background-color: #f3f2f1;
+    padding: 5px;
+    font-size: 18px;
+}
+.story-section .story-item{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 50%;
+    max-width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+}
+.story-section .story-item:last-child{
+    margin-bottom: 0;
+}
+.story-section .story-item:nth-child(even){
+    flex-direction: row-reverse;
+}
+.story-section .story-item:nth-child(odd) .story-text{
+    padding: 0 15px 0 15px;
+}
+.story-section .story-item:nth-child(odd) .story-img{
+    padding: 0 15px 0 15px;
+}
+.story-section .story-item:nth-child(even) .story-text{
+    padding: 0 15px 0 15px;
+}
+.story-section .story-item:nth-child(even) .story-img{
+    padding: 0 15px 0 15px;
+}
+.story-section .story-text,
+.story-section .story-img{
+    flex: 100%;
+    max-width: 50%;
+}
+.story-section .story-text h3{
+    font-size: 24px;
+    margin: 0 0 8px;
+    color: #000000;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.story-section .story-text span.date{
+    font-size: 15px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 15px;
+    display: block;
+    text-transform: capitalize;
+}
+.story-section .story-text p{
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+    color: #000000;
+}
+.event-section{
+    padding: 80px 0 130px;
+}
+.event-section .section-title h2{
+    color: #ffffff;
+}
+.event-section .event-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.event-section .event-item:nth-child(2){
+    transform: translateY(50px);
+}
+.event-section .event-item-inner{
+    background-color: #ffffff;
+    padding: 60px 45px 100px;
+    text-align: center;
+    box-shadow: 0 0 10px #888888;
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.event-section .event-item-inner::before{
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 5px solid transparent;
+    z-index: -1;
+}
+.event-section .event-item-inner h3{
+    color: #000000;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0 0 15px;
+    text-transform: capitalize;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+.event-section .event-item-inner span{
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+}
+.event-section .event-item-inner span.item{
+    margin-bottom: 15px;
+}
+.event-section .event-item-inner p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #555555;
+    margin: 0;
+}
+.event-section .event-item-inner img{
+    position: absolute;
+    width: 40px;
+    left: 50%;
+    bottom: 18px;
+    z-index: -2;
+    margin-left: -20px;
+}
+.people-section{
+    padding: 80px 0 80px;
+}
+.people-section .people-filter{
+    background-color: red;
+    padding: 0 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.people-section .filter-btn{
+    background-color: #cccccc;
+    color: #555555;
+    padding: 7px 15px;
+    display: inline-block;
+    margin: 0 3px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.people-section .filter-btn.active{
+    color: #ffffff;
+}
+.people-section .people-item{
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 15px;
+    margin-top: 25px;
+}
+.people-section .people-item-inner{
+    background-color: #ffffff;
+    padding: 15px;
+}
+.people-section .people-item-inner img{
+    width: 100%;
+    box-shadow: 0 0 10px #cccccc;
+    margin-top: -40px;
+}   
+label input[type="checkbox"]:checked ~ .fas{
+    color: var(--color-orange);
+}
